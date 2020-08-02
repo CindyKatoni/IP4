@@ -1,0 +1,77 @@
+/*General styles*/
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #0c0b09;
+    color: #fff;
+  }
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+  }
+
+/*NavBar Section*/
+.nav-menu a {
+    /* display: block;
+    position: relative; */
+    color: white;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #d9ba85;
+  }
+
+/*Intro Section*/
+.jumbotron{
+    height: 100vh;
+    background: url("../images/hero-bg.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 0;
+
+}
+#intro h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+#intro h1 span {
+    color: #cda45e;
+  }
+#intro .btn-order{
+    margin-top: 30px;
+}
+#intro .btn {
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: black;
+    border: 2px solid #cda45e;
+  }
+  
+  #intro .btn:hover {
+    background: #cda45e;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
