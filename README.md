@@ -9,10 +9,10 @@
 This is a web application for ordering pizza online. The app enables you choose a flavour of your choice, type of crust, size of the pizza as well as if you want any extra toppings.
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/Owiti-Charles/Pizza-Deliciosa/master/images/pizzashop.png" width="900px" height="440px">
+<img src="images/Screenshot from 2020-08-03 22-36-32.png" width="900px" height="440px">
 
 ## Live Page 
-https://Owiti-charles.github.io/IP4 
+https://cindykatoni.github.io/IP4 
 
 
 ## Installation / Setup instruction
