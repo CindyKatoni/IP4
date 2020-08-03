@@ -9,8 +9,32 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
   }
+/*TopBar*/
+#topbar {
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  padding-left: 0px;
+}
+
+ #topbar .contact-info {
+  color: white;
+}
+
+#topbar .contact-info i {
+  color: #d9ba85;
+  padding-right: 4px;
+}
+
+#topbar .contact-info i + i {
+  margin-left: 15px;
+} 
+ 
 
 /*NavBar Section*/
+.navbar{
+  margin-top: 40px;
+}
 .nav-menu a {
     /* display: block;
     position: relative; */
@@ -67,7 +91,144 @@ body {
     background: #cda45e;
     color: #fff;
   }
+/*Order Section*/
+.order h2{
+  text-align: center;
+}
+#variety{
+  padding-top: 30px;
+}
+.order{
+  background-attachment: fixed;
+  background-image: url("../images/slider2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.order-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+}
+.choise{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.deliver{
+  display: none;
+}
+.delivery{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+td,th{
+  font-size: 20px;
+  color: white;
+}
+.choise h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  color: white;
+  font-size: 30px;
+}
 
+#contact h2{
+  text-align: center;
+}
+#contact{
+  color: black;
+}
+#contactdetails h2{
+  text-align: left;
+}
+.footer{
+  padding-top: 5%;
+}
+#addedprice{
+  display: none;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;
+}
+#regards{
+  text-align: center;
+  color: aliceblue;
+}
+#information{
+  padding-top: 5%;
+  font-size: 22px;
+  padding-right: 8%;
+  padding-left: 5%;
+  color: #ffa500;
+}
+@media only screen and (max-width: 485px){
+  .flex-xs-column {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px){
+  .section {
+    padding-top: 30px;
+}
+.flex-xs-column {
+    flex-direction: column;
+}
+#about-us .content {
+  padding: 20px 30px 40px;
+}
+.about-pic img{
+  width: 94%;
+}
+.order-overlay{
+  background-color: rgba(0, 0, 0,0.5);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.order h2{
+  text-align: center;
+  font-size: 20px;
+}
+body,
+header,
+.landing {
+  height: 100vh;
+}
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.text h5{
+  font-size: 20px;
+  padding: 20px;
+}
+#head{
+  padding-top: 30%;
+}
+.col-md-3{
+  padding-left: 20%;
+}
+.iframe{
+  width: 300px;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+
+}
 
 
 

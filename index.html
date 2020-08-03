@@ -7,26 +7,43 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pizza O</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pizza O</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<!--Navigation-->
-<nav class="navbar navbar-expand-lg bg-dark nav-menu">
+  <!--Top Bar-->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="fa fa-phone-square-alt"></i> +254 704 460014
+        <span class="d-none d-lg-inline-block"><i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 9:00 AM - 5:30 PM</span>
+      </div>
+      <!-- <div class="languages">
+        <ul>
+          <li>En</li>
+          <li><a href="#">De</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </div> 
+
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-lg bg-dark nav-menu">
     <a class="navbar-brand" href="#">Pizzeria</a>
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa fa-bars" style="color:#d9ba85; font-size:28px;"></i></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa fa-bars" style="color:#d9ba85; font-size:28px;"></i></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -48,46 +65,142 @@
   <!--Intro section-->
   <div class="jumbotron">
     <div class="container" id="intro">
-    <h1>Welcome to <span>Pizzeria</span></h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ligula mauris, iaculis quis tortor eget, ultricies mollis nisi. 
-        </p>
-        <div class="btn-order">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Order Here</a>
-            <!-- <a class="btn btn-info" href="#">Button 2</a> -->
-        </div>
-       
-    
+      <h1>Welcome to <span>Pizzeria</span></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ligula mauris, iaculis quis tortor eget,
+        ultricies mollis nisi.
+      </p>
+      <div class="btn-order">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Order Here</a>
+        <!-- <a class="btn btn-info" href="#">Button 2</a> -->
+      </div>
     </div>
-</div>
+  </div>
 
+  <!--Order Section-->
 
+  <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now">
+        <h2>Order Here</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <form action="" id="orderpizza">
+            <label for="select">Select Pizza</label>
+            <select class="browser-default custom-select custom-select-md mb-3 name" id="type">
+              <!-- <option selected value="choose">Choose your flavor</option> -->
+              <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+              <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+              <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+              <option value="Chicken Tikka">Chicken Tikka</option>
+              <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+              <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
 
+            </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">Select size here</option>
+              <option value="large">Large -- sh. 1200</option>
+              <option value="medium">Medium -- sh. 850</option>
+              <option value="small">Small -- sh. 600</option>
+            </select>
+            <label for="crust">Choose your favorite Crust!</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+              <option selected value="0">Select your preferred crust!</option>
+              <option value="crispy">Crispy -- sh. 200</option>
+              <option value="stuffed">Stuffed -- sh. 150</option>
+              <option value="gluten-free">Gluten-free-- sh. 180</option>
+            </select>
+            <label for="Toppings">Select Your Toppings at sh. 100 each</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="cheese" value="cheese" name="toppings">
+              <label class="form-check-label" for="Cheese">Cheese</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="bacon" value="bacon" name="toppings">
+              <label class="form-check-label" for="Bacon">Bacon</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="mushrooms" value="mushrooms" name="toppings">
+              <label class="form-check-label" for="Mushrooms">Mushrooms</label>
+            </div>
 
+            <br><br>
+            <button type="submit" class="btn btn-warning proceed">Proceed</button>
+            <button onclick="clearForm()" class="btn btn-danger clear">Clear</button>
 
+          </form>
+        </div>
 
+        <div class="col-sm-7">
+          <!-- <div id="information">
+            <p>Your order will be processed and delivered within one hour of placing.</p>
+            <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+            <p id="regards">Regards, Management</p>
+          </div> -->
+          <div class="choise">
+            <h2>Your Order is:</h2>
+            <div id="your-orders">
+              <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Cancel</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                    <td id="cancel-order"><i class="fas fa-trash-alt"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p>
+              <p id="addedprice">Delivery will cost sh. 150</p>
+              <p id="finallmessage"></p>
+            </div>
+            <button class="btn btn-warning addPizza">Add Pizza</button>
+            <button class="btn btn-warning" id="checkout">Checkout</button>
+            <button class="btn btn-warning deliver">Home delivery?</button>
+          </div>
+          <div class="delivery">
+            <form action="">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                <button class="btn btn-orange" id="final-order">Place Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.19/lodash.min.js"
+    integrity="sha512-/A6lxqQJVUIMnx8B/bx/ERfeuJnqoWPJdUxN8aBj+tZYL35O998ry7UUGoN65PSUNlJNrqKZrDENi4i1c3zy4Q=="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
